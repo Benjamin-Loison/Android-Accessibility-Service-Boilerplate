@@ -22,7 +22,7 @@ public class BasicAccessibilityService extends AccessibilityService {
         CLog.d(event.toString());
 
         switch (event.getEventType()) {
-            //On Gesture events print out the entire view heirarchy!
+            //On Gesture events print out the entire view hierarchy!
             case AccessibilityEvent.TYPE_GESTURE_DETECTION_START:
                 CLog.d(A11yNodeInfo.wrap(getRootInActiveWindow()).toViewHeirarchy());
 
